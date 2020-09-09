@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nuxt",
     "production": "nuxt build",
-    "now-build": "nuxt generate"
+    "now-build": "nuxt generate",
+    "deploy": "node scripts/gh-pages-deploy.js"
   },
   "repository": {
     "type": "git",
@@ -41,7 +42,8 @@
     "babel-plugin-transform-runtime": "~6.23.0",
     "node-sass": "^4.13.1",
     "sass-loader": "~7.1.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "execa": "latest"
   },
   "eslintConfig": {
     "root": true,
